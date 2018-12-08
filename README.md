@@ -26,15 +26,15 @@ npm i pdf2pic
 pdf 转图片：
 ```
 //批量把pdf转化为图片
-node src 1pdf_to_image.js
+node src/1pdf_to_image.js
 ```
 图片转文字
 ```
-node src 2get_text.js
+node src/2get_text.js
 ```
 文字转语音
 ```
-node src 3text_to_voice.js
+node src/3text_to_voice.js
 ```
 [百度语音合成](http://ai.baidu.com/docs#/TTS-API/top)
 
