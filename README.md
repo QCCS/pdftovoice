@@ -35,5 +35,7 @@ node src getText.js
 ```
 文字转语音
 
+[百度语音合成](http://ai.baidu.com/docs#/TTS-API/top)
+
 ## 参考文档
 [百度AI开放API](https://console.bce.baidu.com/#/index/overview)
