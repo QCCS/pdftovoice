@@ -1,6 +1,6 @@
 //pdf转图片
-let PDF2Pic = require('pdf2pic').default;
-let converter = new PDF2Pic({
+var PDF2Pic = require('pdf2pic').default;
+var converter = new PDF2Pic({
     density: 100,           // output pixels per inch
     savename: "pdf",   // output file name
     savedir: "./images",    // output file location

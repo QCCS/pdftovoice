@@ -15,6 +15,7 @@
   "author": "qccs",
   "license": "MIT",
   "dependencies": {
+    "baidu-aip-sdk": "^2.3.6",
     "pdf2pic": "^1.2.6"
   }
 }
