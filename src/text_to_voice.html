@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+
+        #audio {
+            width: 300px;
+            margin: 0px auto;
+            display: block;
+        }
+
+        #ipt {
+            display: block;
+            height: 32px;
+            width: 100%;
+        }
+
+        #iptBtn {
+            display: block;
+            line-height: 42px;
+            height: 42px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="audio-wrap">
+    <audio id="audio" controls="controls" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=6&text=请复制粘贴文本，进行阅读">
+        您的浏览器不支持 audio 标签。
+    </audio>
+</div>
+<div>
+    <textarea id="ipt" value=""></textarea>
+    <button id="iptBtn" value="提交">提交</button>
+</div>
+<script type="text/javascript">
+    $("#iptBtn").click(function () {
+        var val = $("#ipt").val();
+        if (val.length > 0) {
+            var url = 'http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=6&text=';
+            $("#audio").attr("src", url + val);
+        } else {
+            alert("请粘贴文本到输入框")
+        }
+    })
+</script>
+</body>
+</html>

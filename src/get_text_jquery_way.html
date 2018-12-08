@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片转文字</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic?access_token=24.4ee44aaec1cc7eb7c7a2fcf22853932d.2592000.1546829332.282335-15093367",
+        "method": "POST",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded",
+            "cache-control": "no-cache"
+        },
+        "data": {
+            "url": "http://47.100.13.168:8111/untitled_4.png"
+        }
+    }
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+</script>
